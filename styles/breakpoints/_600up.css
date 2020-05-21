@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.houses__item {
+  flex-basis: 50%;
+  margin-bottom: 60px;
+}
+
+.popular__container {
+  justify-content: space-between;
+}
+
+.popular__item {
+  flex-basis: 47%;
+}
+
+.travel__inner {
+  padding: 50px;
+}
+
+.travel__texts, .travel__img {
+  flex-basis: 47%;
+}
+
+.travel__texts {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer .logo {
+  justify-content: flex-start;
+}
+
+.footer__li {
+  margin-left: 0;
+  margin-right: 30px;
+}

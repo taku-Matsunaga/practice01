@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.font-sm {
+  font-size: 16px;
+}
+
+.font-mb {
+  font-size: 19px;
+}
+
+.font-lr {
+  font-size: 23px;
+}
+
+.font-lg {
+  font-size: 36px;
+}
+
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+.popular__item {
+  flex-basis: 23%;
+}
+
+.popular__img {
+  height: 335px;
+}
+
+.travel__img {
+  height: 400px;
+}
+
+.travel__description {
+  margin-bottom: 40px;
+}
+
+.travel__texts {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__nav {
+  display: block;
+}
+
+.mobile-menu__btn {
+  display: none;
+}
+
+.swiper-slide {
+  box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+}
