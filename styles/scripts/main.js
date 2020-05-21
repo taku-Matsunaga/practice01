@@ -42,8 +42,7 @@ class Main{
     constructor(){
         this.header = document.querySelector('.header');
         this._observers = [];
-        this._scrollInit();
-        this.init()
+        this._init();
     }
 
     _init(){
@@ -92,6 +91,5 @@ class Main{
         );
         new ScrollObserver('.tween-animate-title', this._textAnimation);
         new ScrollObserver('.swiper-container', this._toggleSlideAnimation.bind(this), {once: false});
-        this.hero.start();
     }
 }
