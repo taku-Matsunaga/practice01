@@ -306,17 +306,22 @@ main{
   top: 70%;
   transform: translateY(-50%);
   color: $cBlack;
+  transition: all 0.3s ease-in;
 
-  a,
-  span{
+  & .tween-animate-title{
     color: black;
     text-decoration: none;
     margin: 0 40px;
     vertical-align: middle;
+    letter-spacing: 2px;
   }
 
   &.left{
-    left: 50px;
+    left: -50px;
+
+    &.inview{
+      left: 50px;
+    }
 
     & .side__inner{
       transform: rotate(-90deg);
@@ -325,7 +330,12 @@ main{
   }
 
   &.right{
-    right: 50px;
+    right: -50px;
+
+    &.inview{
+      right: 50px;
+    }
+
     & .side__inner{
       transform: rotate(90deg);
       transform-origin: top right;

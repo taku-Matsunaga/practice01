@@ -256,17 +256,22 @@ main {
   top: 70%;
   transform: translateY(-50%);
   color: black;
+  transition: all 0.3s ease-in;
 }
 
-.side a,
-.side span {
+.side .tween-animate-title {
   color: black;
   text-decoration: none;
   margin: 0 40px;
   vertical-align: middle;
+  letter-spacing: 2px;
 }
 
 .side.left {
+  left: -50px;
+}
+
+.side.left.inview {
   left: 50px;
 }
 
@@ -276,6 +281,10 @@ main {
 }
 
 .side.right {
+  right: -50px;
+}
+
+.side.right.inview {
   right: 50px;
 }
 
